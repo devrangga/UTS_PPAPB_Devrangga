@@ -38,6 +38,7 @@
             android:drawableLeft="@drawable/baseline_lock_24"
             android:drawablePadding="16dp"
             android:hint="Pasword"
+            android:inputType="textPassword"
             android:fontFamily="@font/poppinsmedium"
             android:textColor="@color/dark"
             android:textColorHint="@color/medium"

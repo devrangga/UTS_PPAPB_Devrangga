@@ -13,6 +13,10 @@
         android:theme="@style/Theme.UTSPPAPBDev"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivityOrderSummary"
+            android:label="Order Summary"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityPayment"
             android:exported="false" />
         <activity

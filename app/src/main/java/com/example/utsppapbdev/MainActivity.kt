@@ -12,8 +12,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     // Simulated static credentials
-    private val CORRECT_USERNAME = "deprangga"
-    private val CORRECT_PASSWORD = "asikinajah"
+    private val CORRECT_USERNAME = "dep"
+    private val CORRECT_PASSWORD = "123"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

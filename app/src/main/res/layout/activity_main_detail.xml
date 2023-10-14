@@ -16,6 +16,7 @@
         android:fontFamily="@font/poppinsextrabold"
         android:textSize="24dp"
         android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:id="@+id/arrowBack"
         android:drawablePadding="24dp"
         />
     <ImageView

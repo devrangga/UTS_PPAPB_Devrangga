@@ -2,14 +2,11 @@ package com.example.utsppapbdev
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.utsppapbdev.databinding.ActivityMainDetailBinding
-import com.example.utsppapbdev.databinding.ActivityMainItemsBinding
 
 class MainActivityDetail : AppCompatActivity() {
-    private  lateinit var binding : ActivityMainDetailBinding;
+    private  lateinit var binding : ActivityMainDetailBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainDetailBinding.inflate(layoutInflater)
@@ -25,11 +22,17 @@ class MainActivityDetail : AppCompatActivity() {
             detailImage.setImageResource(imgResource)
             detailRate.text = rate
             detailTitle.text = title
+
+            getTickets.setOnClickListener{
+                val intentToPayment = Intent(this@MainActivityDetail,MainActivityPayment::class.java)
+                startActivity(intentToPayment)
+            }
+
+            arrowBack.setOnClickListener{
+                val intentBack = Intent(this@MainActivityDetail,MainActivityItems::class.java)
+                startActivity(intentBack)
+            }
         }
 
-        binding.getTickets.setOnClickListener{
-            val intentToPayment = Intent(this@MainActivityDetail,MainActivityPayment::class.java)
-            startActivity(intentToPayment)
-        }
     }
 }
